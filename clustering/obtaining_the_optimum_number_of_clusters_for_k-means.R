@@ -1,6 +1,6 @@
 # Obtaining the optimum number of clusters for k-means
 
-customer = read.csv('data/customer.csv', header = TRUE)
+customer = read.csv('clustering/data/customer.csv', header = TRUE)
 customer = scale(customer[,-1])
 
 # Calculate the sum of squares (withinss) of different numbers of clusters

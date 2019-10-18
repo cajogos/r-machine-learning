@@ -1,6 +1,6 @@
 # Clustering data with the k-means method
 
-customer = read.csv('data/customer.csv', header = TRUE)
+customer = read.csv('clustering/data/customer.csv', header = TRUE)
 customer = scale(customer[,-1])
 
 set.seed(22)

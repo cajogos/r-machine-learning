@@ -1,6 +1,6 @@
 # Clustering data with hierarchical clustering
 
-customer = read.csv('data/customer.csv', header = TRUE)
+customer = read.csv('clustering/data/customer.csv', header = TRUE)
 head(customer)
 
 # Examine the dataset structure

@@ -4,7 +4,7 @@
 # The silhouette coefficient combines the measurement of the intracluster and intercluster distance.
 # The output value typically ranges from 0 to 1; the closer to 1, the better the cluster is.
 
-customer = read.csv('data/customer.csv', header = TRUE)
+customer = read.csv('clustering/data/customer.csv', header = TRUE)
 customer = scale(customer[,-1])
 
 # Generate the k-means

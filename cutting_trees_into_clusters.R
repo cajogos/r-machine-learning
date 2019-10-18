@@ -1,8 +1,6 @@
 # Cutting trees into clusters
 
 customer = read.csv('data/customer.csv', header = TRUE)
-
-# Normalize the customer data into scale
 customer = scale(customer[,-1])
 
 # Agglomerative (bottom-up) hierarchical clustering

@@ -16,10 +16,10 @@ testset <- churnTrain[ind == 2, ]
 library(class) # install.packages("class")
 
 # Replace yes and no with 1 and 0
-levels(trainset$international_plan) = list("0" = "no", "1" = "yes")
-levels(trainset$voice_mail_plan) = list("0" = "no", "1" = "yes")
-levels(testset$international_plan) = list("0" = "no", "1" = "yes")
-levels(testset$voice_mail_plan) = list("0" = "no", "1" = "yes")
+levels(trainset$international_plan) <- list("0" = "no", "1" = "yes")
+levels(trainset$voice_mail_plan) <- list("0" = "no", "1" = "yes")
+levels(testset$international_plan) <- list("0" = "no", "1" = "yes")
+levels(testset$voice_mail_plan) <- list("0" = "no", "1" = "yes")
 
 # Use the KNN classification method on the training and the testing dataset
 churn.knn <- knn(trainset[, ! names(trainset) %in% c("churn")],
